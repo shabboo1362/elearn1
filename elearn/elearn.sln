@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "C:\...\elearn\", ".", "{74EA32BA-2E04-4A63-B5B1-579D145D7BA6}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/elearn"
+		Debug.AspNetCompiler.PhysicalPath = "..\elearn\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\elearn\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/elearn"
+		Release.AspNetCompiler.PhysicalPath = "..\elearn\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\elearn\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1042"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74EA32BA-2E04-4A63-B5B1-579D145D7BA6}.Debug|.NET.ActiveCfg = Debug|.NET
+		{74EA32BA-2E04-4A63-B5B1-579D145D7BA6}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

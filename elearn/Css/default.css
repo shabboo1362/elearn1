@@ -1,0 +1,73 @@
+﻿td
+{
+	font-family:Tahoma;
+	font-size:12px;
+	text-align: justify;
+	
+	
+}
+input
+{
+	font-family:Tahoma;
+	font-size:12px;
+}
+select 
+{
+	font-family:Tahoma;
+	font-size:12px;
+}
+a
+{
+	
+    color:#000000;
+	text-decoration :none ;
+	font-family:Tahoma;
+	font-size :12px ;
+}
+a:hover
+ {		color:#000000;
+		font-family:Tahoma, Helvetica, Arial;
+		font-size: 12px;
+		text-decoration: none;
+		}
+a.menu
+{
+	
+    color:#000000;
+	text-decoration :none ;
+	font-family:Arial;
+	font-size :12pt ;
+	font-weight:bold;
+	padding-left:5px ;
+	padding-right:5px;
+}
+a:hover.menu
+ {		color:#000000;
+		font-family:Arial,Tahoma Helvetica, ;
+		font-size: 12pt;
+		text-decoration: none;
+		}
+h1.product
+{
+	font-family:Tahoma;
+	font-weight:bold  ;
+	font-size:12px
+}
+a.menuen
+{
+	
+    color:#000000;
+	text-decoration :none ;
+	font-family:Arial;
+	font-size :10pt ;
+	font-weight:bold;
+	padding-left:5px ;
+	padding-right:5px;
+}
+a:hover.menuen
+ {		color:#000000;
+		font-family:Arial,Tahoma Helvetica, ;
+		font-size: 10pt;
+		text-decoration: none;
+}
+	

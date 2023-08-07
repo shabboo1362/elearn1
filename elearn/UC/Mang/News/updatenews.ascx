@@ -1,0 +1,76 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="updatenews.ascx.cs" Inherits="UC_Mang_News_updatenewsl" %>
+<%@ Register TagPrefix="ftb" Namespace="FreeTextBoxControls" Assembly="FreeTextBox" %>
+<%@ Register Assembly="AspNetPersianDatePickup" Namespace="AspNetPersianDatePickup" TagPrefix="pcal" %>
+
+<table dir ="rtl"  style="width: 95%;border-right: maroon 2px solid; border-top: maroon 2px solid; border-left:
+   maroon 2px solid; border-bottom: maroon 2px solid">
+   <tr>
+   <td colspan="6"  
+   style="text-align:center ;font-family:Arial;font-size:16px; font-weight:bold ;
+   border-bottom: maroon 2px solid; color:Blue;">
+       ویرایش خبر</td>
+   </tr>
+<tr style="height:40px"><td colspan="6" style ="font-family:Arial ;font-size:16px; font-weight:bold ;
+vertical-align:middle;border-bottom: maroon 2px solid;">
+<table cellpadding="5" border="0"  width ="100%" >
+<tr>
+<td style ="text-align:center ;width:40px">
+<asp:Image ID="imSuccess" runat="server" Height="25px" ImageUrl="../../../images/succes.GIF"
+        Visible="false" Width="25px" /></td>
+<td   style="vertical-align:middle;" colspan="5" >
+    <asp:Label ID="lblMessage" runat="server" 
+    style ="font-family:Arial ;font-size:16px; font-weight:bold ;"></asp:Label>
+    <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+عنوان
+</td>
+<td align ="right" >
+    <asp:TextBox ID="title" runat="server" Width="325px"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="title"
+        ErrorMessage="فیلدهای ستاره دار را وارد کنید.">*</asp:RequiredFieldValidator></td>
+</tr>
+<tr>
+<td>
+محتوای
+</td>
+<td align ="center" dir="rtl" colspan="5" >
+<center>
+<FTB:FreeTextBox id="FTBText" runat="Server" /></center>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="FTBText"
+        ErrorMessage="فیلدهای ستاره دار را وارد کنید.">*</asp:RequiredFieldValidator></td>
+</tr>
+<tr>
+ <td><asp:Label ID="Label4" runat="server" Text=" الویت : "></asp:Label></td>
+   <td align="right"> <asp:TextBox ID="olaviat" runat="server" ></asp:TextBox>
+       <asp:RangeValidator ID="RangeValidator1" runat="server" MaximumValue="255" MinimumValue="0" ControlToValidate="olaviat">عددی بین 0 تا 256 را وارد کنید.</asp:RangeValidator></td>
+    </tr>
+    <tr>
+  <td>  <asp:Label ID="Label5" runat="server" Text="تاریخ نمایش : "></asp:Label></td>
+   <td><pcal:PersianDatePickup ID="pdp" runat="server" ReadOnly="True" ></pcal:PersianDatePickup> </td>
+    </tr>
+    <tr>
+    <td><asp:Label ID="Label6" runat="server" Text="تاریخ انقضا : "></asp:Label></td>
+    <td><pcal:PersianDatePickup ID="pdb1" runat="server" ReadOnly="True" ></pcal:PersianDatePickup></td> 
+   </tr>
+    <tr>
+        <td>
+            <asp:Label ID="Label1" runat="server" Text="محل درج خبر : "></asp:Label></td>
+        <td>
+            <asp:DropDownList ID="reshteddl" runat="server">
+                <asp:ListItem Selected="True" Value="0">صفحه اصلی</asp:ListItem>
+            </asp:DropDownList></td>
+    </tr>
+<tr>
+<td align ="center" colspan="6" >
+   <center><asp:Button ID="btnSubmit" runat="server" Text="تایید " 
+    Font-Names="Courier New" Font-Size="12pt"  OnClientClick="displayFun();" OnClick="btnSubmit_Click" />&nbsp;
+    <asp:Button ID="btnCancel" runat="server" Text="انصراف" 
+    Font-Names="Courier New" Font-Size="12pt" OnClick="btnCancel_Click"   />  </center></td>
+</tr>
+</table>
